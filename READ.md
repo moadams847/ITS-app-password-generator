@@ -1,1 +1,1 @@
-gen-pas-api/
+# Password Generator API
