@@ -11,6 +11,11 @@
         body{
             font-family:'Courier New', Courier, monospace;
         }
+        .img{
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+        }
         .form{
             text-align: center;
             margin: 15% 30% 10% 30%;
@@ -30,23 +35,34 @@
 </head>
 
 <body>
+    
+    <!-- <div class="img">
+         <img src="ug.png" alt="logo">
+        <p>hoili</p>
+    </div> -->
 
     <div class="form">
         <form action="{{url_for('password')}}" method ="POST">
-            <label for="password_length">Password length</label><br><br>
+            <label for="password_length">ITS Password Generator APP</label><br><br>
             <input type="text" name = 'password_length' placeholder="Enter password length" required = 'required' id = 'password_length'><br><br>
             <button type="submit">Generate Password</button>
         </form>
     
         <br>
-          
-         <h3>{{gen_pas}}</h3>
+
+         {% if 'Temporary' in gen_pas %}  
+         <h4 style="color:cornflowerblue;" >{{gen_pas}}</h4>
+         {% elif 'length' in gen_pas %}
+         <h4 style="color:seagreen;" >{{gen_pas}}</h4>
+         {% elif 'Wrong' in gen_pas %}
+         <h4 style="color:red;" >{{gen_pas}}</h4>
+         {% endif %}
     </div>
 
     <footer>
         <p style="text-align: center;">ITS Support Team<br>
         <a href="https://www.ug.edu.gh/">University of Ghana</a></p>
-        <p style="text-align: center;" >copyright ©2021, Administrative Computing <br>
+        <p style="text-align: center;" >copyright © 2021, Administrative Computing Unit <br>
         <a href="https://twitter.com/thenexeconomist">Twitter</a>
         </p>
       </footer>

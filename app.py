@@ -39,7 +39,7 @@ def password():
 
 
         except:
-            return render_template('home.html', gen_pas = f'Wrong entry, Provide a number !!')
+            return render_template('home.html', gen_pas = f'Wrong entry, Provide a number!!')
                     
     else: 
         return render_template('home.html')
