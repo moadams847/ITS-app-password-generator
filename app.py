@@ -6,7 +6,6 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def home():
-
     return render_template('home.html')
 
 @app.route("/password", methods = ['POST', 'GET'])
@@ -17,14 +16,14 @@ def password():
         try:
 
             passlen = int(request.form['password_length'])
-            s= "!#$%&-=+?abcdefghjk!#$%&-=+?mnpqrstuvwxyz23456789!#$%&-=+?ABCDEFGHJKMNPQRSTUVWXYZ!#$%&-=+?"
+            s= "abcdefghjk!$%&+?mnpqrstuvwxyz23456789!$%&+?ABCDEFGHJKMNPQRSTUVWXYZ!$%&+?"
             str_ = "abcdefghjkmnpqrstuvwxyz23456789ABCDEFGHJKMNPQRSTUVWXYZ"
             
 
             if passlen > 0  and passlen <= 12:
                 
                 p = "".join(random.sample(s,passlen ))
-                return render_template('home.html', gen_pas = f'Temporary ITS password generated:     {p}')
+                return render_template('home.html', gen_pas = f'{p}')
 
             elif passlen <= 0:
                 return render_template('home.html', gen_pas = f'Password length must be greater 0')
@@ -32,7 +31,7 @@ def password():
             elif passlen > 12 and  passlen <= 54:
 
                 p = "".join(random.sample(str_,passlen ))
-                return render_template('home.html', gen_pas = f'Temporary ITS password generated:     {p}')
+                return render_template('home.html', gen_pas = f'{p}')
             
             elif passlen > 54:
                 return render_template('home.html', gen_pas = f'Password length must be less than 55')
