@@ -20,3 +20,18 @@ I started this projec to automate an aspect of the work I do as an ITS support o
 ```bash
 pip install -r requirements.txt
 ```
+
+## Tech/framework used
+
+1. HTML5
+2. CSS3
+3. Bootstrap 5
+4. Python (Flask)
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
