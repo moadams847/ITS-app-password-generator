@@ -15,8 +15,8 @@ I started this projec to automate an aspect of the work I do as an ITS support o
 1. Clone Repo
 2. cd to the directory where requirements.txt is located
 3. activate your virtualenv.
-4.
+4. run: pip install -r requirements.txt in your shell
 
 ````bash
-run: pip install -r requirements.txt in your shell```
+pip install -r requirements.txt```
 ````
