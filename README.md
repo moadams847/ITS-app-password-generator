@@ -8,4 +8,4 @@ I started this projec to automate an aspect of the work I do as an ITS support o
 
 # Screenshot
 
-![image info](C:\Users\ADAMS\Desktop\pass-gen.PNG)
+![image info](./ADAMS/Desktop/pass-gen.PNG)
