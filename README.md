@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Password Generator API
 =======
 #2021			Password Generator Website
@@ -7,4 +6,3 @@
 #	Handled versioning with Git.
 #	Hosted the website on GitHub.
 #	Deployed the website to pythonanywhere
->>>>>>> 6db04b429b84f0c2b3a5fe74f9ad0fc46cbc65c7
