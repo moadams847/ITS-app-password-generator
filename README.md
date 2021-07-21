@@ -17,6 +17,6 @@ I started this projec to automate an aspect of the work I do as an ITS support o
 3. activate your virtualenv.
 4. run: pip install -r requirements.txt in your shell
 
-````bash
-pip install -r requirements.txt```
-````
+```bash
+pip install -r requirements.txt
+```
