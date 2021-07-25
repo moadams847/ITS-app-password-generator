@@ -83,7 +83,6 @@
                       mt-1
                       me-1
                     "
-                    onclick="myFunction()"
                   >
                     Copy
                   </button>
@@ -107,6 +106,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script></script>
+    <!-- https://stackoverflow.com/a/14711572/15235273 -->
+    <!-- helped with linking the js file -->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js') }}"
+    ></script>
   </body>
 </html>
