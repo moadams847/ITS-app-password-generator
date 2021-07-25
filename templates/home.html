@@ -82,7 +82,7 @@
                       end-0
                       mt-1
                       me-1
-                      board
+                      copy
                     "
                   >
                     Copy
@@ -109,9 +109,23 @@
 
     <!-- https://stackoverflow.com/a/14711572/15235273 -->
     <!-- helped with linking the js file -->
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename='js/index.js') }}"
-    ></script>
+    <!-- <script src="{{ url_for('static', filename='js/index.js') }}"></script> -->
+    <script>
+      var btn = document.querySelector(".copy");
+      var text = document.querySelector("h2");
+      btn.addEventListener("click", function () {
+        // https://codepen.io/bharatramnani94/post/copy-text-to-clipboard-using-vanilla-javascript
+        // helped with clipboard script
+
+        var textToCopy = text.innerText;
+        var myTemporaryInputElement = document.createElement("input");
+        myTemporaryInputElement.type = "text";
+        myTemporaryInputElement.value = textToCopy;
+        document.body.appendChild(myTemporaryInputElement);
+        myTemporaryInputElement.select();
+        document.execCommand("Copy");
+        document.body.removeChild(myTemporaryInputElement);
+      });
+    </script>
   </body>
 </html>
