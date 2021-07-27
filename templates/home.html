@@ -78,17 +78,10 @@
                   <!-- https://stackoverflow.com/a/50404501/15235273 -->
                   <!-- helped remove bootstrap button shadow -->
                   <span
-                    class="
-                      tt
-                      position-absolute
-                      top-0
-                      end-0
-                      mt-2
-                      me-2
-                      changeText
-                    "
+                    class="tt position-absolute top-0 end-0 mt-2 me-2"
                     data-bs-placement="top"
                     title="Copy to clipboard"
+                    id="changeText"
                     ><button
                       class="
                         btn btn-outline-primary btn-sm
@@ -125,7 +118,7 @@
     <!-- jquery google cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- to enable tool tip -->
+    <!-- to enable tooltip -->
     <script>
       const tooltips = document.querySelectorAll(".tt");
       tooltips.forEach((t) => {
@@ -133,15 +126,27 @@
       });
     </script>
 
-    <!-- my js -->
-    <!-- https://stackoverflow.com/a/14711572/15235273 -->
-    <!-- helped with linking the js file -->
-    <!-- <script src="{{ url_for('static', filename='js/index.js') }}"></script> -->
     <script>
-      var viewClass = document.querySelector(".changeText");
+      $(".copy").click(function () {
+        // https://stackoverflow.com/a/50150393/15235273
+        // this helped with changing tooltip text to copied
+        $("#changeText")
+          .attr("title", "Copied!")
+          .tooltip("_fixTitle")
+          .tooltip("show")
+          .attr("title", "Copy to clipboard")
+          .tooltip("_fixTitle");
+      });
+    </script>
+
+    <!-- enables text to be copied to clipboard -->
+    <script>
+      // variables------------------------------------
       var btn = document.querySelector(".copy");
       var text = document.querySelector("h2");
-      btn.addEventListener("click", function () {
+
+      // event listener and call back function--------
+      btn.addEventListener("click", function (e) {
         // https://codepen.io/bharatramnani94/post/copy-text-to-clipboard-using-vanilla-javascript
         // helped with clipboard script
 
