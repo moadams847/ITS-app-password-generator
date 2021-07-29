@@ -4,11 +4,10 @@ from Pgenerator import generate_password
 app = Flask(__name__)
 
 @app.route("/")
-@app.route("/home")
 def home():
     return render_template('home.html')
 
-@app.route("/password", methods = ['POST', 'GET'])
+@app.route("/password", methods = ['POST'])
 def password():
     try:
             
