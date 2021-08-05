@@ -1,36 +1,33 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request
 from Pgenerator import generate_password
 
 app = Flask(__name__)
 
 @app.route("/")
-@app.route("/home")
 def home():
-    return render_template('home.html')
+    return 'Welcome'
 
-@app.route("/password", methods = ['POST', 'GET'])
+@app.route("/password")
 def password():
     try:
-            
-        if request.method == 'POST':
-            passlen = int(request.form['password_length'])
+        passlen = int(request.args.get('passlen'))
             
         if passlen > 0  and passlen <= 12:
             p = generate_password(passlen)
-            return render_template('home.html', gen_pas = f'{p}')
+            return f'The generated password is: {p}'
 
         elif passlen <= 0:
-            return render_template('home.html', gen_pas = f'Password length must be greater 0')
+            return f'Password length must be greater 0'
 
         elif passlen > 12 and  passlen <= 54:
             p = generate_password(passlen)
-            return render_template('home.html', gen_pas = f'{p}')
+            return f'The generated password is: {p}'
             
         elif passlen > 54:
-            return render_template('home.html', gen_pas = f'Password length must be less than 55')
+            return f'Password length must be less than 55'
             
     except:
-        return render_template('home.html')
+        return f'Make a request'
 
             
         
