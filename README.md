@@ -1,14 +1,14 @@
-# ITS Password Generator
+# ITS Password Generator API
 
-This project is a web interface that generates passwords in a random fashion.
+This project is a web API that generates passwords in a random fashion.
 
 ## Motivation
 
-I started this projec to automate an aspect of the work I do as an ITS support officer at the University Of Ghana Computing System.
+I started this project to automate an aspect of the work I do as an ITS support officer at the University Of Ghana Computing System.
 
-## Screenshot
+## URL
 
-[![ITS password generator screenshot](images/pass-gen.PNG "ITS password generator screenshot")](https://drive.google.com/file/d/1ozLLqT1RXJmseM14IPMwSHMfizx5uTvM/view?usp=sharing)
+Password Generator App [Link](https://cryptic-hollows-59775.herokuapp.com/)
 
 ## Installation
 
@@ -23,10 +23,7 @@ pip install -r requirements.txt
 
 ## Tech/framework used
 
-1. HTML5
-2. CSS3
-3. Bootstrap 5
-4. Python (Flask)
+1. Python (Flask)
 
 ## Contributing
 
