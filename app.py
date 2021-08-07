@@ -11,7 +11,7 @@ CORS(app)
 def home():
     return jsonify({'About':'Welcome'})
 
-@app.route("/password")
+@app.route("/password", methods= ['GET','POST'])
 def password():
     try:
         passlen = int(request.args.get('passlen'))
