@@ -28,7 +28,7 @@ def password():
 
             
     except:
-        return jsonify({'catch error': 'Make by passing a password length'})
+        return jsonify({'catch error': 'Make a request by passing a password length'})
 
             
         
