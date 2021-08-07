@@ -1,11 +1,11 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from Pgenerator import generate_password
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return 'Welcome'
+    return jsonify({'About':'Welcome'})
 
 @app.route("/password")
 def password():
@@ -14,20 +14,21 @@ def password():
             
         if passlen > 0  and passlen <= 12:
             p = generate_password(passlen)
-            return f'The generated password is: {p}'
+            return jsonify({'password': p})
 
         elif passlen <= 0:
-            return f'Password length must be greater 0'
+            return jsonify({'message':'Password length must be greater 0'})
 
         elif passlen > 12 and  passlen <= 54:
             p = generate_password(passlen)
-            return f'The generated password is: {p}'
+            return jsonify({'password': p})
             
         elif passlen > 54:
-            return f'Password length must be less than 55'
+            return jsonify({'message':'Password length must be less than 55'})
+
             
     except:
-        return f'Make a request'
+        return jsonify({'catch error': 'Make by passing a password length'})
 
             
         
