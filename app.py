@@ -1,7 +1,11 @@
 from flask import Flask, request, jsonify
 from Pgenerator import generate_password
 
+# https://stackoverflow.com/q/20035101
+# flask cors
+from flask_cors import CORS, cross_origin
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def home():
