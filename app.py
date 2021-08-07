@@ -12,17 +12,13 @@ def password():
     try:
         passlen = int(request.args.get('passlen'))
             
-        if passlen > 0  and passlen <= 12:
+        if passlen > 0  and passlen <= 54:
             p = generate_password(passlen)
             return jsonify({'password': p})
 
         elif passlen <= 0:
             return jsonify({'message':'Password length must be greater 0'})
-
-        elif passlen > 12 and  passlen <= 54:
-            p = generate_password(passlen)
-            return jsonify({'password': p})
-            
+        
         elif passlen > 54:
             return jsonify({'message':'Password length must be less than 55'})
 
