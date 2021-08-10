@@ -6,9 +6,9 @@ def generate_password(passlen):
     return p
 
 def generate_passwordWithoutXtics(passlen):
-    s= "abcdefghjkmnpqrstuvwxyz23456789ABCDEFGHJKMNPQRSTUVWXYZ"
-    p = "".join(random.sample(s,passlen ))
-    return p
+    ss= "abcdefghjkmnpqrstuvwxyz23456789ABCDEFGHJKMNPQRSTUVWXYZ"
+    pp = "".join(random.sample(ss,passlen ))
+    return pp
 
     
 if __name__ == '__main__':
