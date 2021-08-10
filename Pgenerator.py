@@ -5,6 +5,10 @@ def generate_password(passlen):
     p = "".join(random.sample(s,passlen ))
     return p
 
+def generate_passwordWithoutXtics(passlen):
+    s= "abcdefghjkmnpqrstuvwxyz23456789ABCDEFGHJKMNPQRSTUVWXYZ"
+    p = "".join(random.sample(s,passlen ))
+    return p
 
     
 if __name__ == '__main__':
