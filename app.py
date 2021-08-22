@@ -14,16 +14,16 @@ def home():
 @app.route("/passwordapi/v2/special-characters", methods= ['GET','POST'])
 def passwordWithXtics():
     try:
-        passlen = int(request.args.get('passlen'))
+        passwordLength = int(request.args.get('passwordLength'))
             
-        if passlen > 0  and passlen <= 54:
-            p = generate_password(passlen)
-            return jsonify({'password': p})
+        if passwordLength > 0  and passwordLength <= 54:
+            passwordString = generate_password(passwordLength)
+            return jsonify({'password': passwordString})
 
-        elif passlen <= 0:
+        elif passwordLength <= 0:
             return jsonify({'message':'Password length must be greater 0'})
         
-        elif passlen > 54:
+        elif passwordLength > 54:
             return jsonify({'message':'Password length must be less than 55'})
 
             
@@ -34,16 +34,16 @@ def passwordWithXtics():
 @app.route("/passwordapi/v2/no-special-characters", methods= ['GET','POST'])
 def passwordWithoutXtics():
     try:
-        passlen = int(request.args.get('passlen'))
+        passwordLength = int(request.args.get('passwordLength'))
             
-        if passlen > 0  and passlen <= 54:
-            p = generate_passwordWithoutXtics(passlen)
-            return jsonify({'password': p})
+        if passwordLength > 0  and passwordLength <= 54:
+            passwordString = generate_passwordWithoutXtics(passwordLength)
+            return jsonify({'password': passwordString})
 
-        elif passlen <= 0:
+        elif passwordLength <= 0:
             return jsonify({'message':'Password length must be greater 0'})
         
-        elif passlen > 54:
+        elif passwordLength > 54:
             return jsonify({'message':'Password length must be less than 55'})
 
             
