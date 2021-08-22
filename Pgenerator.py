@@ -1,9 +1,9 @@
 import random
 
-def generate_password(passlen):
-    s= "abcdefghjk!$%&+?mnpqrstuvwxyz23456789!$%&+?ABCDEFGHJKMNPQRSTUVWXYZ!$%&+?"
-    p = "".join(random.sample(s,passlen ))
-    return p
+def generate_password(passwordLength):
+    samplestring= "abcdefghjk!$%&+?mnpqrstuvwxyz23456789!$%&+?ABCDEFGHJKMNPQRSTUVWXYZ!$%&+?"
+    passwordString = "".join(random.sample(samplestring,passwordLength))
+    return passwordString
 
 
     
