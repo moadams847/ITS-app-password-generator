@@ -28,7 +28,7 @@ def passwordWithXtics():
 
             
     except:
-        return jsonify({'catch error': 'Make a request by passing a password length'})
+        return jsonify({'message': 'Make a request by passing a password length'})
 
 
 @app.route("/passwordapi/v2/no-special-characters", methods= ['GET','POST'])
@@ -41,14 +41,14 @@ def passwordWithoutXtics():
             return jsonify({'password': passwordString})
 
         elif passwordLength <= 0:
-            return jsonify({'message':'Password length must be greater 0'})
+            return jsonify({'password':'Password length must be greater 0'})
         
         elif passwordLength > 54:
-            return jsonify({'message':'Password length must be less than 55'})
+            return jsonify({'password':'Password length must be less than 55'})
 
             
     except:
-        return jsonify({'catch error': 'Make a request by passing a password length'})
+        return jsonify({'password': 'Make a request by passing a password length'})
 
             
         
