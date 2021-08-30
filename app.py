@@ -11,6 +11,7 @@ CORS(app)
 def home():
     return jsonify({'About':'Welcome'})
 
+
 @app.route("/passwordapi/v2/special-characters", methods= ['GET','POST'])
 def passwordWithXtics():
     try:
