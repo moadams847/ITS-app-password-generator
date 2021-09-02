@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from Pgenerator import generate_password, generate_passwordWithoutXtics
+from password_generator import generate_password, generate_passwordWithoutXtics
 
 # https://stackoverflow.com/q/20035101
 # flask cors
@@ -10,7 +10,6 @@ CORS(app)
 @app.route("/")
 def home():
     return jsonify({'About':'Welcome'})
-
 
 @app.route("/passwordapi/v2/special-characters", methods= ['GET','POST'])
 def passwordWithXtics():
@@ -50,9 +49,7 @@ def passwordWithoutXtics():
             
     except:
         return jsonify({'password': 'Make a request by passing a password length'})
-
-            
-        
+    
                
 if __name__ == '__main__':
     app.run(debug = True)
