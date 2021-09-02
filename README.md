@@ -8,7 +8,7 @@ I started this project to automate an aspect of the work I do as an ITS support 
 
 ## URL
 
-Password Generator App [Link](https://cryptic-hollows-59775.herokuapp.com/)
+Password Generator App [Link](https://fierce-anchorage-76525.herokuapp.com)
 
 ## Installation
 
