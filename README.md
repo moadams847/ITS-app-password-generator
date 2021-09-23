@@ -32,31 +32,37 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 # How To Use The API
 
-The API has two paths and a single query parameter.
+## The API has two paths and a single query parameter.
 
-1. API EndPoint
-   GET
-   https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/
+## 1. API EndPoint
 
-2. API Paths
+GET
+https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/
 
-- special-characters
-  GET
+## 2. API Paths
+
+- special-characters:
+
+* GET
   https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters
 
-- no-special-characters
-  GET
+- no-special-characters:
+
+* GET
   https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters
 
-3. Query Parameter
-   key: passwordLength
-   value: number or integer
+## 3. Query Parameter
 
-An example of a 10-character password containing special characters:
+- key: passwordLength
+- value: number or integer
+
+## Examples
+
+- An example of a 10-character password containing special characters:
 
 https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters?passwordLength=10
 
-Another example of a 10-character password without special characters:
+- Another example of a 10-character password without special characters:
 
 https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters?passwordLength=10
 
