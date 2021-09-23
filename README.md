@@ -56,6 +56,12 @@ https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-character
 - key: passwordLength
 - value: number or integer
 
+URL: https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters?passwordLength={integer}
+
+#### or
+
+URL: https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters?passwordLength={integer}
+
 ## Examples
 
 - An example of a 10-character password containing special characters:
