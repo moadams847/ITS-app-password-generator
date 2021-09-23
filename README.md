@@ -31,8 +31,8 @@ pip install -r requirements.txt
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+# How To Use The API
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-# How To Use The API
