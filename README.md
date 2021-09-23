@@ -54,13 +54,15 @@ https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-character
 ## 3. Query Parameter
 
 - key: passwordLength
-- value: number or integer
+- value: integer
 
-URL: https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters?passwordLength={integer}
+URL:
+https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters?passwordLength={integer}
 
 #### or
 
-URL: https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters?passwordLength={integer}
+URL:
+https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters?passwordLength={integer}
 
 ## Examples
 
