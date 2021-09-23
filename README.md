@@ -43,13 +43,13 @@ https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/
 
 - special-characters:
 
-* GET
-  https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters
+GET
+https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters
 
 - no-special-characters:
 
-* GET
-  https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters
+GET
+https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters
 
 ## 3. Query Parameter
 
