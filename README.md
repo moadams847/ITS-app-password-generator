@@ -66,13 +66,13 @@ https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters?p
 
 ## Examples
 
-- An example of a 10-character password containing special characters:
+- An example of a 15-character password containing special characters:
 
-https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters?passwordLength=10
+https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/special-characters?passwordLength=15
 
-- Another example of a 10-character password without special characters:
+- Another example of a 15-character password without special characters:
 
-https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters?passwordLength=10
+https://fierce-anchorage-76525.herokuapp.com/passwordapi/v2/no-special-characters?passwordLength=15
 
 ## License
 
