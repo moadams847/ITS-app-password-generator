@@ -1,4 +1,4 @@
-# ITS Password Generator API
+# Password Generator API
 
 This is a web API for generating random characters.
 
