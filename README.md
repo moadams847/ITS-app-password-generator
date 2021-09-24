@@ -4,7 +4,7 @@ This is a web API for generating random characters.
 
 ## Motivation
 
-I started this project to automate an aspect of the work I do as an ITS support officer at the University Of Ghana Computing System.
+I started this project to automate an aspect of the work I did as an ITS support officer at the University Of Ghana Computing System.
 
 ## URL
 
