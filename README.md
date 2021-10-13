@@ -8,7 +8,7 @@ I started this project to automate an aspect of the work I did as an ITS support
 
 ## Screenshot
 
-[![Password Generator API](imgs/api.png "Password Generator API")]()
+[![Password Generator API](imgs/api.PNG "Password Generator API")]()
 
 ## URL
 
