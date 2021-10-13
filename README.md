@@ -6,6 +6,10 @@ This is a web API for generating random characters.
 
 I started this project to automate an aspect of the work I did as an ITS support officer at the University Of Ghana Computing System.
 
+## Screenshot
+
+[![Password Generator API](imgs/api.png "Password Generator API")]()
+
 ## URL
 
 [Password Generator API](https://fierce-anchorage-76525.herokuapp.com)
